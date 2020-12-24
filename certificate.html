@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <div class="WELCOME">
+        <h1>RUDDY M EFFENDI</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="home">Home</a></li>
+          <li><a href="certificate.html" class="sertifikat">Certificate</a></li>
+          <li><a href="" class="mblog">Blog</a></li>
+          <li><a href="" class="kontak">Contact</a></li>
+        </ul>
+      </nav>
+     </div>
+     </header>
+    
+      <div class="Certificate">
+        <h1>CERTIFICATE</h1>
+        <img src="Certficate/0.png" id="Certficate">
+        <div class="bwh">
+        <a href="#" onclick="ganti(0)">Prev</a>
+        <a href="#" onclick="ganti(1)">Next</a>
+        </div>
+      </div>
+      <div class="btn-wrapper">
+        <a href="index.html" class="btn homey">Home</a>
+        <a href="certificate.html" class="btn sertificate">Certificate</a>
+        <a href="#" class="btn blog">Blog</a>
+        <a href="#" class="btn contact">Contact</a>
+      </div>
+    <footer><p> Copyright &copy; 2020, RME.</p></footer>
+    <script>
+      function ganti(angka){
+        var lokasi = 'Certficate/'+ angka + '.png';
+        document.getElementById('Certficate').src = lokasi;
+      }
+    </script>
+  </body>
+</html>
