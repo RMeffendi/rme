@@ -25,8 +25,19 @@
         <h1>CERTIFICATE</h1>
         <img src="Certficate/0.png" id="Certficate">
         <div class="bwh">
-        <a href="#" onclick="ganti(0)">Prev</a>
-        <a href="#" onclick="ganti(1)">Next</a>
+        <a href="#" onclick="sebelum()"><Prev<</a>
+        
+        <div class="click">
+        <a href="#" onclick="ganti(0)">1</a>
+        <a href="#" onclick="ganti(1)">2</a>
+        <a href="#" onclick="ganti(2)">3</a>
+        <a href="#" onclick="ganti(3)">4</a>
+        <a href="#" onclick="ganti(4)">5</a>
+        <a href="#" onclick="ganti(5)">6</a>
+        <a href="#" onclick="ganti(6)">7</a>
+        </div>
+        
+        <a href="#" onclick="lanjut()">>Next></a>
         </div>
       </div>
       <div class="btn-wrapper">
@@ -37,9 +48,29 @@
       </div>
     <footer><p> Copyright &copy; 2020, RME.</p></footer>
     <script>
+      var nomor = 0;
       function ganti(angka){
         var lokasi = 'Certficate/'+ angka + '.png';
         document.getElementById('Certficate').src = lokasi;
+        return false;
+      }
+      function sebelum (){
+        nomor = nomor - 1;
+        if(nomor< 0){
+        nomor= 6;
+        }
+        var lokasi = 'Certficate/'+ nomor + '.png';
+        document.getElementById('Certficate').src = lokasi;
+        return false;
+      }
+      function lanjut (){
+        nomor = nomor + 1;
+        if(nomor> 6){
+        nomor= 0;
+        }
+        var lokasi = 'Certficate/'+ nomor + '.png';
+        document.getElementById('Certficate').src = lokasi;
+        return false;
       }
     </script>
   </body>
