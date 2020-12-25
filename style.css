@@ -136,14 +136,18 @@ footer{
  
 }
 .Certificate a {
-  display: inline;
+  display:inline-block;
   text-decoration: none;
-  margin: 0% 21% 0% 25%;
-  padding: 20px 0px 20px 0px;
 }
-
+.click{
+  display: none;
+}
 .bwh{
+  margin: 0px 50px 0px 50px;
   padding-top: 50px;
+  padding-left: 45%;
+  padding-right: 20%;
+  display: inline-block;
 }
 
 /* responsive */
@@ -181,15 +185,18 @@ footer{
 .Certificate img{
     position: relative;
     display: inline-block;
-    width: 40%;
-   
-    
+    width: 40%; 
 }
 .Certificate a {
-  display: inline;
+  display: inline-block;
   text-decoration: none;
-  margin: 0% 23% 0% 22%;
-  padding: 0px 0px 0px 0px;
+}
+.bwh{
+  margin: 0px 50px 0px 50px;
+  padding-top: 50px;
+  padding-left: 42%;
+  padding-right: 20%;
+  display: inline-block;
 }
 
 }
@@ -230,5 +237,11 @@ footer{
   margin: 0% 10% 0% 22%;
   padding: 0px 0px 0px 0px;
 }
-
+.bwh{
+  margin: 0px 50px 0px 50px;
+  padding-top: 50px;
+  padding-left: 25%;
+  padding-right: 20%;
+  display: inline-block;
+}
 }
